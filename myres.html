@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Reservations</title>
+
+  <!-- Header and Footer Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- General Landmark Styles -->
+  <link rel="stylesheet" href="assets/css/landmark-style.css">
+</head>
+<body>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <a href="index.html" class="logo">
+              <img src="assets/images/logo.png" alt="Turath Logo">
+            </a>
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="deals.html"class="active">Deals</a></li>
+              <li><a href="Contact-us.html">Contact-Us</a></li>
+            </ul>   
+            <a class="menu-trigger"><span>Menu</span></a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="second-page-heading">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>My Reservations</h2>
+          <p>Enter your phone number to view your reservation details.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="reservation-lookup">
+    <h3>Lookup Reservations by Phone Number</h3>
+    <form id="phone-lookup-form">
+      <label for="phone-number">Mobile Number (+9665XXXXXXXX):</label>
+      <input type="tel" id="phone-number" name="phone" 
+             pattern="\+9665\d{8}" 
+             placeholder="+9665XXXXXXXX"
+             required
+             minlength="13"
+             maxlength="13">
+      <button type="submit">Find Reservations</button>
+    </form>
+    <div id="reservations-list"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h2>About Turath</h2>
+        <p>Turath is your gateway to exploring the rich cultural heritage, historical landmarks, and vibrant traditions of our region.</p>
+      </div>
+      <div class="footer-social">
+        <h2>Follow Us</h2>
+        <div class="social-icons">
+          <a href="#"><img src="assets/images/Twitter.jpg" alt="Twitter"></a>
+          <a href="#"><img src="assets/images/instagram.jpg" alt="Instagram"></a>
+          <a href="#"><img src="assets/images/youtube.jpg" alt="YouTube"></a>
+        </div>
+      </div> 
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright © 2025 <a href="#">Turath</a>. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="assets/js/Validation-MyRes.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Turath - Saudi Arabia</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+
+<body>
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <a href="index.html" class="logo">
+              <img src="assets/images/logo.png" alt="Turath Logo">
+            </a>
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="deals.html" class="active">Deals</a></li>
+              <li><a href="Contact-us.html">Contact-Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+   <!-- ***** Main Banner Area Start ***** -->
+   <div class="about-main-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="content">
+            <div class="blur-bg"></div>
+            <h4>EXPLORE OUR COUNTRY</h4>
+            <div class="line-dec"></div>
+            <h2>Welcome To Saudi Arabia</h2>
+            <p>Book your dream trip and explore the beauty of Saudi Arabia.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Main Banner Area End ***** -->
+  
+  <!-- Reservation Form -->
+  <div class="reservation-container">
+    <h2>Make Your Reservation</h2>
+    <form class="reservation-container form" action="http://localhost:3000/submit-reservation" method="post">
+      <!-- Choose Trip -->
+      <div class="form-group">
+        <label for="trip">Choose Your Trip</label>
+        <select id="trip" name="trip" required>
+          <option value="" disabled selected>Select a Trip</option>
+          <option value="Jeddah">Jeddah - $500/person</option>
+          <option value="Abha">Abha - $450/person</option>
+          <option value="Al-Ula">Al-Ula - $600/person</option>
+          <option value="Riyadh">Riyadh - $550/person</option>
+          <option value="Mecca">Mecca - $700/person</option>
+          <option value="Taif">Taif - $400/person</option>
+        </select>
+      </div>
+      
+      <!-- User Information -->
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required minlength="2">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="+9665XXXXXXXX" required pattern="^\+9665\d{8}$" minlength="13" maxlength="13">
+      </div>
+
+      <!-- Payment Details -->
+      <div class="form-group">
+        <label for="transaction">Transaction Number</label>
+        <input type="text" id="transaction" name="transaction" placeholder="Enter your transaction number (4 digits)" required minlength="4" maxlength="4">
+        <div class="note">
+          <strong>Important:</strong> Please transfer the booking amount to the account details below and add the transaction number for verification.
+        </div>
+        <div class="account-details">
+          <strong>Account Name:</strong> Turath Travel Agency<br>
+          <strong>Bank Name:</strong> National Bank of Saudi Arabia<br>
+          <strong>Account Number:</strong> 1234-5678-9012<br>
+          <strong>IBAN:</strong> SA1234567890123456789012
+        </div>
+      </div>
+
+      <!-- Additional Information -->
+      <div class="form-group">
+        <label for="notes">Additional Notes (Optional)</label>
+        <textarea id="notes" name="notes" placeholder="Write any additional notes here..." maxlength="400"></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="submit-btn">Submit Reservation</button>
+
+      <!-- View My Reservation Button -->
+      <br><br>
+      <div style="text-align: center;">
+        <a href="myres.html" class="view-reservation-btn">View My Reservation</a>
+      </div>
+      <br>
+
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h2>About Turath</h2>
+        <p>
+          Turath is your gateway to exploring the rich cultural heritage, historical landmarks, and vibrant traditions of our region.
+        </p>
+      </div>
+      <div class="footer-social">
+        <h2>Follow Us</h2>
+        <div class="social-icons">
+          <a href="https://twitter.com/your-twitter-account"><img src="assets/images/Twitter.jpg" alt="Twitter"></a>
+          <a href="https://instagram.com/your-instagram-account"><img src="assets/images/instagram.jpg" alt="Instagram"></a>
+          <a href="https://youtube.com/your-youtube-channel"><img src="assets/images/youtube.jpg" alt="YouTube"></a>
+        </div>
+      </div> 
+    </div>
+    <div class="footer-bottom">
+      <p>
+        Copyright © 2025 <a href="#">Turath</a>. All rights reserved.
+      </p>
+    </div>
+  </footer>
+  
+  <!-- Preloader Script -->
+  <script>
+    window.addEventListener("load", () => {
+      const preloader = document.querySelector(".js-preloader");
+      preloader.classList.add("loaded");
+    });
+  </script>
+  <script src="assets/js/Validation-FrontRes.js"></script>
+  <script src="assets/js/validation-res.js"></script>
+  
+</body>
+</html>
