@@ -1,1 +1,2 @@
 ![Turath Screenshot](assets/images/homepage.png)
+![homepage](https://github.com/user-attachments/assets/3caf8a45-ebea-4a68-beb9-4fc14870f1ad)
